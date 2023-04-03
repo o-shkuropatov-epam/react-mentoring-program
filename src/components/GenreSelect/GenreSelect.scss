@@ -1,0 +1,33 @@
+.genre-select {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 4px solid #424242;
+}
+.genre-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.genre-item {
+  display: block;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 30px;
+  color: #fff;
+  cursor: pointer;
+  &.selected {
+    &:after {
+      content: '';
+      display: block;
+      height: 4px;
+      background-color: #F65261;
+      position: absolute;
+      bottom: -20px;
+      width: 100%;
+    }
+  }
+}
